@@ -6,6 +6,8 @@ Cloning youtube using vanilla JavaScript and Express
 - [ ] Home
 - [ ] Join
 - [ ] Log In
+- [ ] Log Out
+- [ ] Search
 - [ ] User Detail
 - [ ] User Profile
 - [ ] User Edit

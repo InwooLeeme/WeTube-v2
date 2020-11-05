@@ -4,7 +4,8 @@ import morgan from "morgan";
 import helmet from "helmet";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
-import { userRouter } from "./router.js";
+import globalRouter from "./Router/globalRouter.js";
+
 
 const app = express();
 
@@ -18,7 +19,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 
-app.use(userRouter);
+app.use(globalRouter);
 
 
 export default app;
