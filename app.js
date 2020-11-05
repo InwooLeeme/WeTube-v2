@@ -4,10 +4,9 @@ import morgan from "morgan";
 import helmet from "helmet";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
+import { userRouter } from "./router.js";
 
 const app = express();
-
-const PORT = 4000;
 
 app.use(helmet(
     {
@@ -15,6 +14,11 @@ app.use(helmet(
     }
 ));
 app.use(morgan("dev"));
+app.use(cookieParser());
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 
-app.listen(PORT,() => console.log(`Server is Running on : ${PORT}`));
+app.use(userRouter);
+
+
+export default app;
