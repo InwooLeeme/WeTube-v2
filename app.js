@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false}));
 
 app.use(routes.home, globalRouter);
 app.use(routes.users, userRouter);
-app.use(routes.videos, vidoeRouter)';'
+app.use(routes.videos, vidoeRouter);
 
 
 export default app;
