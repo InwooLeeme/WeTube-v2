@@ -11,6 +11,7 @@ Cloning youtube using vanilla JavaScript and Express
 - [ ] User Detail
 - [ ] User Profile
 - [ ] User Edit
+- [ ] Change Password
 - [ ] Video Detail
 - [ ] Video Upload
 - [ ] Video Edit
