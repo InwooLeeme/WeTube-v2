@@ -17,10 +17,10 @@ app.use(helmet(
         contentSecurityPolicy: false,
     }
 ));
-app.use(morgan("dev"));
 app.use(cookieParser());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.urlencoded({ extended: true}));
+app.use(morgan("dev"));
 
 app.use(routes.home, globalRouter);
 app.use(routes.users, userRouter);
